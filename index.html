@@ -941,7 +941,7 @@
       story:'Giữa chặng đường, hai người dừng chân dùng bữa trưa, ánh nhìn trao nhau nhiều hơn cả lời nói.' },
     { icon:'🎨', name:'Workshop', note:'Daydreamer – 52 ngõ 12 Đặng Thai Mai', time:'CN · 13:00',
       story:'Tại xưởng nhỏ đầy sắc màu, {hero} và {princess} cùng nhau tạo nên một món quà nhỏ, dấu ấn riêng của hai người.' },
-    { icon:'🐚', name:'Ăn vặt', note:'Ốc Tùng Hói – 14 Tôn Thất Thiệp', time:'CN · 14:30',
+    { icon:'🐚', name:'Ăn vặt', note:'Ốc Tùng Hói – 14 Tôn Thất Thiệp', time:'CN · 15:00',
       story:'Hương ốc thơm nồng giữa phố khiến hai người dừng chân, cùng chia nhau từng món ăn vặt giản dị.' },
     { icon:'⛪', name:'Đi lễ', note:'Nhà thờ An Thái – Ngõ 460 Thụy Khuê', time:'CN · 18:00',
       story:'Bước vào ngôi thánh đường cổ kính, chú ếch {hero} thầm ước lời nguyền sẽ tan biến trong khoảnh khắc thiêng liêng này.' },
@@ -1304,7 +1304,7 @@
   advClose.addEventListener('click', () => advOverlay.classList.remove('open'));
   document.getElementById('advResetBtn').addEventListener('click', (e) => {
     e.stopPropagation();
-    if(!confirm('Xoá hết tiến trình đã chơi và làm lại từ đầu?')) return;
+    if(!confirm('Xoá hết tiến trình và làm lại từ đầu?')) return;
     try{ localStorage.removeItem(SAVE_KEY); }catch(err){}
     clearAllPhotoBlobs();
     checkpoints.forEach(c => { c.cleared = false; c.photos = [null,null,null]; });
