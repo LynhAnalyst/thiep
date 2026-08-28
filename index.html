@@ -926,13 +926,13 @@
   // ================= ADVENTURE GAME =================
   const checkpoints = [
     { icon:'🐸', name:'Ăn tối', note:'Bí mật', time:'Th.Bảy · 20:30',
-      story:'Tại một quán ăn giấu kín, chú ếch {hero} lần đầu được cùng công chúa {princess} ngồi cùng bàn — bước khởi đầu của một lời nguyền sắp được hoá giải.' },
+      story:'Tại một quán ăn giấu kín, hoàng tử ếch {hero} lần đầu được ngồi cùng công chúa {princess} — bước khởi đầu của một lời nguyền sắp được hoá giải.' },
     { icon:'🌇', name:'Dạo quanh Hồ Tây', note:'', time:'Th.Bảy · 21:30',
       story:'Dưới ánh trăng bên hồ, {hero} và {princess} cùng nhau dạo bước, để lại dấu chân song hành trên con đường ven hồ.' },
     { icon:'☕', name:'Cà phê', note:'', time:'Th.Bảy · 22:00',
       story:'Bên tách cà phê ấm, hai người kể cho nhau nghe câu chuyện về lời nguyền ếch — và cả những điều chưa từng nói ra.' },
     { icon:'🍜', name:'Ăn sáng', note:'Bún riêu – 27 Tô Hiệu, Cầu Giấy', time:'CN · 08:00',
-      story:'Bình minh lên, {princess} và chú ếch {hero} cùng nhau ăn sáng, tiếp thêm năng lượng cho một ngày dài phía trước.' },
+      story:'Bình minh lên, {princess} và hoàng tử ếch {hero} cùng nhau ăn sáng, tiếp thêm năng lượng cho một ngày dài phía trước.' },
     { icon:'🏛️', name:'Rạp Xiếc Trung Ương', note:'67 - 69 Trần Nhân Tông, Hai Bà Trưng', time:'CN · 10:00',
       story:'Bước qua những dấu tích thời gian, hai người cùng nhau khám phá chuyện xưa cũ, như đang viết tiếp câu chuyện của chính mình.' },
     { icon:'📸', name:'Momentme Booth', note:'Chụp ảnh photobooth', time:'CN · 11:30',
@@ -942,11 +942,11 @@
     { icon:'🎨', name:'Workshop', note:'Daydreamer – 52 ngõ 12 Đặng Thai Mai', time:'CN · 13:00',
       story:'Tại xưởng nhỏ đầy sắc màu, {hero} và {princess} cùng nhau tạo nên một món quà nhỏ, dấu ấn riêng của hai người.' },
     { icon:'🐚', name:'Ăn vặt', note:'Ốc Tùng Hói – 14 Tôn Thất Thiệp', time:'CN · 15:00',
-      story:'Hương ốc thơm nồng giữa phố khiến hai người dừng chân, cùng chia nhau từng món ăn vặt giản dị.' },
+      story:'Hương ốc thơm nồng giữa phố khiến hai người dừng chân, cùng nhau thưởng thức món ăn vặt giản dị.' },
     { icon:'⛪', name:'Đi lễ', note:'Nhà thờ An Thái – Ngõ 460 Thụy Khuê', time:'CN · 18:00',
-      story:'Bước vào ngôi thánh đường cổ kính, chú ếch {hero} thầm ước lời nguyền sẽ tan biến trong khoảnh khắc thiêng liêng này.' },
+      story:'Bước vào ngôi thánh đường cổ kính, hoàng tử ếch {hero} thầm ước lời nguyền sẽ tan biến trong khoảnh khắc thiêng liêng này.' },
     { icon:'🍷', name:'Ăn tối', note:'Khrua Baan Thai - 35 Khúc Thừa Dụ', time:'CN · 20:30',
-      story:'Tại bàn tiệc cuối cùng, tình cảm của công chúa {princess} đã hoá giải lời nguyền — chú ếch {hero} hoá thành hoàng tử thật sự, khép lại một hành trình cổ tích đáng nhớ.' }
+      story:'Tại bàn tiệc cuối cùng, tình cảm của công chúa {princess} đã hoá giải lời nguyền — hoàng tử ếch {hero} hoá thành hoàng tử thật sự, khép lại một hành trình cổ tích đáng nhớ.' }
   ].map((c, i) => ({ ...c, id:i, cleared:false, photos:[null,null,null] }));
 
   const PHOTOS_NEEDED = 3;
